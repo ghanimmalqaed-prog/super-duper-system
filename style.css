@@ -1,0 +1,79 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #f4f4f4;
+}
+
+/* HERO */
+.hero {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 50px;
+}
+
+.hero-text h1 {
+  font-size: 32px;
+  font-family: cursive;
+}
+
+.hero-text h2 {
+  font-size: 24px;
+}
+
+.hero-img img {
+  width: 200px;
+  border-radius: 10px;
+}
+
+/* SECTIONS */
+.section {
+  padding: 40px;
+  text-align: center;
+}
+
+.title {
+  background: #e2a874;
+  display: inline-block;
+  padding: 10px 30px;
+  border-radius: 20px;
+}
+
+/* CARDS */
+.card {
+  background: #d98c4c;
+  color: black;
+  padding: 20px;
+  margin: 15px;
+  border-radius: 15px;
+  width: 250px;
+}
+
+.large {
+  width: 70%;
+  margin: 20px auto;
+}
+
+/* CONTACT */
+.contact-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+/* QR */
+.qr-box {
+  background: #d98c4c;
+  padding: 30px;
+  border-radius: 20px;
+  display: inline-block;
+}
+
+.qr-box img {
+  width: 150px;
+}
+
+.empty {
+  height: 150px;
+  width: 200px;
+}
