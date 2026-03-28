@@ -177,24 +177,65 @@
 <!-- TESTIMONIALS -->
 <section class="section" id="testimonials">
   <h2 class="section-title">Testimonials for Classmates</h2>
-  <div class="testimonials-grid">
-    <div class="testimonial-card">
+  <p class="testimonial-note">These recommendations have been provided by classmates with whom I worked on multiple academic projects and assignments.</p>
+  <div class="testimonials-slideshow">
+    <div class="slide active" data-slide="0">
       <img src="images/testimonial-nasser.png" alt="Testimonial from Nasser — appreciating effort and dedication">
     </div>
-    <div class="testimonial-card">
+    <div class="slide" data-slide="1">
       <img src="images/testimonial-bayan.png" alt="Testimonial from Bayan — hardworking and dependable classmate">
     </div>
-    <div class="testimonial-card">
+    <div class="slide" data-slide="2">
       <img src="images/testimonial-rafeef.png" alt="Testimonial from Rafeef — reliable team member">
     </div>
+    <div class="slideshow-controls">
+      <button class="slide-btn" data-target="0" aria-label="Slide 1">1</button>
+      <button class="slide-btn" data-target="1" aria-label="Slide 2">2</button>
+      <button class="slide-btn" data-target="2" aria-label="Slide 3">3</button>
+    </div>
   </div>
-  <p class="testimonial-note">These recommendations have been provided by classmates with whom I worked on multiple academic projects and assignments.</p>
 </section>
 
 <!-- FOOTER -->
 <footer class="footer">
   <p>&copy; 2025 Ghanim Mohamed Alqaed. All rights reserved.</p>
 </footer>
+
+<script>
+(function() {
+  const slides = document.querySelectorAll('.testimonials-slideshow .slide');
+  const buttons = document.querySelectorAll('.testimonials-slideshow .slide-btn');
+  let current = 0;
+  let timer;
+
+  function showSlide(index) {
+    slides[current].classList.remove('active');
+    buttons[current].classList.remove('active');
+    current = index;
+    slides[current].classList.add('active');
+    buttons[current].classList.add('active');
+  }
+
+  function nextSlide() {
+    showSlide((current + 1) % slides.length);
+  }
+
+  function startTimer() {
+    timer = setInterval(nextSlide, 4000);
+  }
+
+  buttons.forEach(function(btn) {
+    btn.addEventListener('click', function() {
+      clearInterval(timer);
+      showSlide(parseInt(this.dataset.target));
+      startTimer();
+    });
+  });
+
+  buttons[0].classList.add('active');
+  startTimer();
+})();
+</script>
 
 </body>
 </html>
