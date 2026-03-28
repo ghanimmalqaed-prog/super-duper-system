@@ -119,6 +119,7 @@ img {
   margin-bottom: 34px;
   text-align: center;
   letter-spacing: -0.02em;
+  white-space: nowrap;
 }
 
 .section > .section-title {
@@ -153,10 +154,11 @@ img {
 /* ============ CONTACT ============ */
 .contact-grid {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(3, auto);
   gap: 24px;
   max-width: 920px;
   margin: 0 auto;
+  justify-content: center;
 }
 
 .contact-card {
@@ -178,8 +180,9 @@ img {
   padding: 48px 24px;
   border-radius: 24px;
   font-weight: 700;
-  font-size: 1.1rem;
+  font-size: 1rem;
   word-break: break-word;
+  min-width: 0;
 }
 
 .contact-value a {
@@ -227,6 +230,7 @@ img {
   border-radius: 30px;
   margin-bottom: 28px;
   text-align: center;
+  white-space: nowrap;
 }
 
 .coursework-block {
