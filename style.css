@@ -251,6 +251,10 @@ img {
   overflow: hidden;
 }
 
+.coursework-image.image-small {
+  flex: 0 0 30%;
+}
+
 .coursework-image img {
   width: 100%;
   height: auto;
@@ -361,7 +365,8 @@ img {
     flex-direction: column;
   }
 
-  .coursework-image {
+  .coursework-image,
+  .coursework-image.image-small {
     flex: none;
   }
 
