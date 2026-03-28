@@ -2,63 +2,187 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Ghanim Mohamed Portfolio</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ghanim Mohamed Alqaed — Portfolio</title>
   <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Inter:wght@400;600;700;900&display=swap" rel="stylesheet">
 </head>
 <body>
 
+<!-- DECORATIVE BLOBS -->
+<div class="blob blob-tl"></div>
+<div class="blob blob-br"></div>
+
 <!-- HERO -->
-<section class="hero">
+<section class="hero" id="home">
   <div class="hero-text">
     <h1>Ghanim Mohamed Alqaed</h1>
-    <h2>Portfolio</h2>
+    <p class="subtitle">Portfolio</p>
   </div>
   <div class="hero-img">
-    <img src="profile.png" alt="Profile">
+    <img src="images/1.png" alt="Ghanim Mohamed Alqaed — Hero banner" class="hero-banner">
   </div>
 </section>
 
-<!-- OBJECTIVE -->
-<section class="section">
-  <h2 class="title">Personal Objective</h2>
-  <div class="card large">
-    Final-year Human Resource Management student seeking an opportunity to begin a career in HR. Aiming to apply knowledge in recruitment, employee relations, and organizational development while gaining hands-on experience. Eager to contribute to a professional work environment, support organizational success, and continue developing strong HR and interpersonal skills.
+<!-- NAV -->
+<nav class="nav">
+  <a href="#about">About</a>
+  <a href="#contact">Contact</a>
+  <a href="#coursework">Coursework</a>
+  <a href="#achievements">Achievements</a>
+  <a href="#testimonials">Testimonials</a>
+</nav>
+
+<!-- PERSONAL OBJECTIVE -->
+<section class="section" id="about">
+  <h2 class="section-title">Personal Objective</h2>
+  <div class="card card-large">
+    <p>Final-year Human Resource Management student seeking an opportunity to begin a career in HR. Aiming to apply knowledge in key areas such as recruitment, employee relations, and organizational development while gaining hands-on experience. Eager to contribute to a professional work environment, support organizational success, and continue developing strong HR and interpersonal skills.</p>
   </div>
 </section>
 
 <!-- CONTACT -->
-<section class="section">
-  <h2 class="title">Contact Me</h2>
-  <div class="contact-container">
-    <div class="card">
-      <h3>Phone Number</h3>
-      <p>+973 35117042</p>
+<section class="section" id="contact">
+  <h2 class="section-title">Contact Me</h2>
+  <div class="contact-grid">
+    <div class="contact-card">
+      <div class="contact-label">Phone Number</div>
+      <div class="contact-value">+973 35117042</div>
     </div>
-
-    <div class="card">
-      <h3>Email</h3>
-      <p>GhanimAlqaed@outlook.com</p>
+    <div class="contact-card">
+      <div class="contact-label">Email</div>
+      <div class="contact-value">
+        <a href="mailto:GhanimAlqaed@outlook.com">GhanimAlqaed@outlook.com</a>
+      </div>
     </div>
-
-    <div class="card">
-      <h3>LinkedIn</h3>
-      <p>Ghanim Alqaed</p>
+    <div class="contact-card">
+      <div class="contact-label">LinkedIn</div>
+      <div class="contact-value">Ghanim Alqaed</div>
     </div>
   </div>
 </section>
 
-<!-- QR SECTION -->
+<!-- QR CODES -->
 <section class="section">
-  <h2 class="title">CV QR Code</h2>
-  <div class="qr-box">
-    <img src="cv-qr.png" alt="QR Code">
+  <div class="qr-grid">
+    <div class="qr-item">
+      <h2 class="section-title">CV QR Code</h2>
+      <div class="qr-box">
+        <img src="images/5.png" alt="CV QR Code">
+      </div>
+    </div>
+    <div class="qr-item">
+      <h2 class="section-title">Cover Letter QR</h2>
+      <div class="qr-box">
+        <img src="images/6.png" alt="Cover Letter QR Code">
+      </div>
+    </div>
   </div>
 </section>
 
-<section class="section">
-  <h2 class="title">Cover Letter QR</h2>
-  <div class="qr-box empty"></div>
+<!-- COURSEWORK -->
+<section class="section" id="coursework">
+  <h2 class="section-title">Coursework</h2>
+
+  <!-- Coursework 1 -->
+  <div class="coursework-block">
+    <h3 class="coursework-heading">Coursework 1# — Marketing Day</h3>
+    <div class="coursework-content">
+      <div class="coursework-image">
+        <img src="images/7.png" alt="Marketing Day coursework — phone case business">
+      </div>
+      <div class="coursework-text">
+        <p>This course required us to develop our own business idea and bring it to life, allowing us to gain practical experience in marketing and selling products. As a team, we conducted market research to identify current trends and consumer preferences. We discovered a growing demand for personalized products that allow individuals to express their identity.</p>
+        <p>Based on this insight, we developed the idea of customizable mirror phone covers. These covers not only reflect the user's image but also provide an opportunity for personalization, such as adding names, quotes, or designs that represent the user's personality and style. Our product combines functionality with self-expression, making it both practical and meaningful for customers.</p>
+      </div>
+    </div>
+    <div class="coursework-content reverse">
+      <div class="coursework-image">
+        <img src="images/8.png" alt="Phone case designs and models">
+      </div>
+      <div class="coursework-text">
+        <p>We procured inventory for a variety of phone models and collaborated with a third-party printing provider to produce customized designs based on customer orders. This process allowed us to efficiently deliver personalized products while maintaining flexibility in production.</p>
+        <p>Through this experience, I developed valuable skills in managing business relationships with external suppliers and gained hands-on experience using Adobe applications for design and customization. Additionally, this project enhanced my ability to understand and target specific customer segments, adapt to changing market trends, and respond effectively to diverse and sometimes demanding customer preferences.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Coursework 2 -->
+  <div class="coursework-block">
+    <h3 class="coursework-heading">Coursework 2# — NASMA</h3>
+    <div class="coursework-content">
+      <div class="coursework-image">
+        <img src="images/9.png" alt="NASMA project — Bapco Energies">
+      </div>
+      <div class="coursework-text">
+        <p>Nasma was a group project developed by my classmates and me, aimed at transforming the outdoor experience into a more comfortable and enjoyable one, particularly during the summer season.</p>
+        <p>The concept was inspired by outdoor malls in Qatar, where cooling systems are integrated beneath the flooring to regulate temperature. We proposed implementing a similar underground air-conditioning system at Al Liwan to enhance the overall shopping experience by making it more comfortable for visitors moving between stores.</p>
+      </div>
+    </div>
+    <div class="card card-large">
+      <p>For this project, we analyzed the layout of the location, identifying high-traffic areas to ensure optimal placement of the cooling system. We designed the pathway for the underground air-conditioning system, while also estimating labor costs, budgeting for equipment, and considering the legal requirements associated with the project. Additionally, we selected the appropriate AC units and developed a comprehensive budget plan.</p>
+      <p>The table below outlines the key steps involved in the project, along with their associated costs and timelines. This project enhanced our ability to assess potential risks, manage time effectively, and pay close attention to the detailed planning required to successfully implement such a large-scale initiative.</p>
+    </div>
+    <div class="table-image">
+      <img src="images/11.png" alt="NASMA project deliverables table">
+    </div>
+  </div>
 </section>
+
+<!-- ACHIEVEMENTS -->
+<section class="section" id="achievements">
+  <h2 class="section-title">Achievements</h2>
+
+  <!-- Business Achievement -->
+  <div class="achievement-block">
+    <div class="coursework-content">
+      <div class="coursework-image">
+        <img src="images/12.png" alt="ucoverit.bh Instagram business page">
+      </div>
+      <div class="coursework-text">
+        <p>One of my key achievements was recognizing the potential of our marketing project and transforming it into a real business. Together with my co-founder, we continued developing the concept beyond the course requirements and actively promoted it in the market.</p>
+        <p>As demand grew, we expanded our production capacity and increased our operational workload to meet the needs of a functioning business. This experience strengthened my entrepreneurial mindset and enhanced my ability to scale operations, manage growth, and adapt to real-world business challenges.</p>
+      </div>
+    </div>
+    <div class="coursework-content reverse">
+      <div class="coursework-image">
+        <img src="images/13.png" alt="Product packaging and satisfied customer orders">
+      </div>
+      <div class="coursework-text">
+        <p>Through consistent hard work, a strong focus on quality, and a commitment to meeting customer needs, we successfully established our brand as a trusted and highly recommended store, receiving positive reviews from satisfied customers.</p>
+        <p>As the business grew, the volume of daily orders increased beyond our capacity to manage effectively. As a result, we made the decision to temporarily pause operations due to the overwhelming demand. This experience highlighted both the success of our venture and the importance of scalability, resource planning, and sustainable growth in business operations.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Certification Achievement -->
+  <div class="achievement-block">
+    <div class="coursework-content">
+      <div class="coursework-image">
+        <img src="images/14.png" alt="Certificate of Attendance — Cross-Cultural and Inclusive Communication Workshop">
+      </div>
+      <div class="coursework-text">
+        <p>In my pursuit of continuous learning and professional development, I attended multiple workshops led by marketing experts to expand my knowledge and skills. Through these experiences, I gained valuable industry insights and was awarded certifications that reflect my commitment to learning and self-improvement.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- TESTIMONIALS -->
+<section class="section" id="testimonials">
+  <h2 class="section-title">Testimonials for Classmates</h2>
+  <div class="testimonials-image">
+    <img src="images/15.png" alt="Testimonials and recommendations from classmates">
+  </div>
+  <p class="testimonial-note">This recommendation has been provided by a classmate with whom I worked on multiple academic projects and assignments.</p>
+</section>
+
+<!-- FOOTER -->
+<footer class="footer">
+  <p>&copy; 2025 Ghanim Mohamed Alqaed. All rights reserved.</p>
+</footer>
 
 </body>
 </html>
